@@ -7,7 +7,7 @@ x1 = np.random.randint(10, size=6)
 x2 = np.random.randint(10, size=(3, 4))
 
 x = np.arange(10)
-x2_change = x2[:2, :2]
+x2_change = x2[:2, :2].copy()
 x2_change[0, 0] = 99
 print(x2)
 
