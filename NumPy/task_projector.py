@@ -14,4 +14,3 @@ y1 = 2 * (x1**2) + 5
 
 x2 = np.arange(-10, 11, 1)
 y2 = np.exp(-x2)
-print(y2)
