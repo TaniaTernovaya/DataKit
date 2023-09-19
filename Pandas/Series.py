@@ -9,5 +9,5 @@ grades = {"Anna": 3, "Tamara": 4, "Sebastian": 5}
 grades_pd = pd.Series(grades)
 print(grades_pd[:-1])
 
-money = pd.Series([200, 400], index=["Ksenia", "Verona"])
+money = pd.Series(np.array([2, 3, 45, 67, 78, 90]))
 print(money)
