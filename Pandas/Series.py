@@ -1,13 +1,20 @@
 import numpy as np
 import pandas as pd
 
-data = pd.Series([2, 56, 6], index=["a", "b", "c"])
-print(data)
+data = pd.Series([2, 3, 4, 4, 5, 5, 5, 6])
+print(data.values)
+print(data.index)
+
+data1 = pd.Series([1, 2, 4, 5, 6])
+print(data1[1])
+print(data1[3:])
+print(data1[1:3])
 
 
-grades = {"Anna": 3, "Tamara": 4, "Sebastian": 5}
-grades_pd = pd.Series(grades)
-print(grades_pd[:-1])
+population_dict = {"California": 786, "NewYoork": 7654, "Virginia": 753212345}
+data2 = pd.Series(population_dict)
+print(data2)
+print(data2["California":"NewYoork"])
 
-money = pd.Series(np.array([2, 3, 45, 67, 78, 90]))
-print(money)
+data3 = pd.Series("tania", index=np.arange(10))
+print(data3)
