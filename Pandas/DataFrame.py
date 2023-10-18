@@ -20,6 +20,13 @@ population_dict = {
 population = pd.Series(population_dict)
 area = pd.Series(area_dict)
 
+print(area)
 
-data1 = pd.DataFrame(population, columns="population")
+data = pd.DataFrame({"population": population, "area": area})
+print(data)
+print(data.values)
+print(data.columns)
+
+
+data1 = pd.DataFrame(population_dict, columns="population")
 print(data1)
