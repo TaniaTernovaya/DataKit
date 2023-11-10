@@ -15,10 +15,11 @@ print(B)
 print(A + B)
 
 df = pd.DataFrame(rng.randint(0, 10, (4, 3)), columns=list("ABC"))
-# print(df)
-# print(df.iloc[0])
-# print(df - df.iloc[0])
-# print(df.subtract(df["B"], axis=0))
+print(df)
+print(df.iloc[0])
+print(df - df.iloc[0])
+print(df.subtract(df["B"], axis=0))
 
 
 print(df.iloc[1:, 1:])
+
