@@ -1,0 +1,12 @@
+import pandas as pd
+
+def get_titanic_dataframe(data):
+    df = pd.read_csv('/Users/tatanaternovaa/Documents/training-skills/titanic-main/task/train.csv')
+    return df
+
+def get_filled():
+    df = get_titanic_dataframe()
+    names = df['Name']
+    print(names)
+
+get_filled
