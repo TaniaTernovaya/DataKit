@@ -9,4 +9,4 @@ def get_filled():
     names = df['Name']
     print(names)
 
-get_filled
+get_filled()
