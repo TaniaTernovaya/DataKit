@@ -1,5 +1,6 @@
 import math
 
+
 def arg_min(T, S):
     amin = -1
     m = math.inf  # максимальное значение
